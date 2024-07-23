@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hi ! This is Home. </h1>
+    <h2>How are you <%=name %> ? </h2>
+    <h2>How are you <%=locals.name %> ? </h2>
+    
+    <h2>How are you <%=locals.nambooo %> ? </h2><!--This won't throw error, but name will not be printed-->
+    
+    <h3>Your % is  <%=50+45 %> ? </h3>
+
+    <main>
+        <form method="post" >
+            <h1>Contact me </h1>
+            <input type="text" name="name" placeholder="name"/>
+            <input type="email" name="email" placeholder="email"/>
+            <button type="submit">Send message</button>
+        </form>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
